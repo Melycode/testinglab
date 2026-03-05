@@ -52,7 +52,7 @@ public class MiddleEarthBattle {
 	    if (kindPoints > evilPoints) {
 	        return "kind wins to";
 	    } else if (evilPoints > kindPoints) {
-	        return "evil wins to ";
+	        return "evil wins to";
 	    } else {
 	        return "draw";
 	    }

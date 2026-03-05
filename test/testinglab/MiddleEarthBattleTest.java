@@ -32,7 +32,7 @@ class MiddleEarthBattleTest {
     @Test
     void kindLoses() {
         String resultado = battle.calculateResult(1, 4);
-        assertFalse(resultado.contains("wins"));
+        assertFalse(resultado.contains("kind wins"));
     }
 
     @Test

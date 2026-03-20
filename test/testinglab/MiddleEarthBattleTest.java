@@ -8,7 +8,7 @@ class MiddleEarthBattleTest {
     MiddleEarthBattle battle = new MiddleEarthBattle();
 
     @Test
-    void kindWins() throws IllegalArgumentException {
+    void calculateStrength_numenoreans4_returns16() throws IllegalArgumentException {
         HashMap<String, Integer> kindBattle = new HashMap<>();
         kindBattle.put("Númenóreanos", 4);
         int resultado = battle.calculateStrength(kindBattle, battle.kindArmy);
@@ -26,7 +26,7 @@ class MiddleEarthBattleTest {
         HashMap<String, Integer> kindBattle = new HashMap<>();
         kindBattle.put("Elfos", 5);
         int resultado = battle.calculateStrength(kindBattle, battle.kindArmy);
-        assertNotEquals(10, resultado);
+        assertEquals(25, resultado);
     }
 
     @Test
